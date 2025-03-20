@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NUTRIFT Calculadora Nutricional</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NUTRIFT </h1>
+        <h2> Calculadora Nutricional </h2>
+        <form id="formulario">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" required>
+            
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" required>
+            
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" required>
+            
+            <label for="objetivo">Objetivo:</label>
+            <select id="objetivo" required>
+                <option value="emagrecer">Emagrecer</option>
+                <option value="manter">Manter Peso</option>
+                <option value="ganhar_musculo">Ganhar Músculo</option>
+            </select>
+            
+            <button type="button" onclick="calcularNutrientes()">Calcular</button>
+        </form>
+        
+        <div id="resultado"></div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
